@@ -9,7 +9,7 @@ const app = express();
 
 // ✅ CORS Configuration
 app.use(cors({
-    origin: "https://frontend-varnabs-projects.vercel.app",  // ✅ Allow all origins
+    origin: "*",  // ✅ Allow all origins
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],  
       credentials: true,    
